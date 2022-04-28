@@ -32,7 +32,6 @@ body{
     display: flex;
     flex-direction: column;
 }
-/*-----------------------------------------*/
 ._container{
     max-width: 940px;
     margin: 0 auto;
@@ -89,7 +88,7 @@ body{
     line-height: 22px;
     color: #1C1C1C;
     padding: 17px 0px 34px 0px;
-}   
+} 
 .header__menu {
 }
 .menu {
@@ -107,6 +106,9 @@ body{
 }
 .menu__link {
     color: #222222;
+}
+.header__logo:hover,.menu__link:hover{
+    color: #fff;
 }
 @media (max-width:767px){
     body.lock{
@@ -427,6 +429,12 @@ color: #FFFFFF;
     font-size: 22px;
     line-height: 136%;
 }
+.preset__block_title a{
+    color: black;    
+}
+.preset__block_title a:hover{
+    text-decoration: underline;
+}
 .preset__block_subtitle {
     max-width: 389px;
     font-size: 16px;
@@ -577,12 +585,19 @@ color: #FFFFFF;
     color: #489FD9;
     padding: 5px 0px 5px 0px;
 }
+.text__blue:hover{
+    text-decoration: underline;
+}
 .text_black {
     display: inline-block;
     font-size: 14px;
     line-height: 157%;
     padding: 5px 0px;
     margin-left: -3px;
+    color: black;
+}
+.text_black:hover{
+    text-decoration: underline;
 }
 .card__item_line {
     max-height: 2px;
@@ -623,13 +638,17 @@ color: #FFFFFF;
     text-align: center;
     padding-top: 20px;
 }
-.plans__container_ps p{        
+.plans__container_text{
+    display: block;           
     font-size: 16px;
     line-height: 137.5%;
 }
 .plans__container_btn{
     color: #489FD9;
     font-size: 14px;
+}
+.plans__container_btn:hover{
+    text-decoration: underline;
 }
 @media (max-width: 920px){
     .card__item{
@@ -754,7 +773,6 @@ color: #FFFFFF;
     font-size: 15px;
     line-height: 146%;   
     color: #939596;
-
 }
 .social__block_img {
     padding-top: 12px;
@@ -767,7 +785,7 @@ color: #FFFFFF;
 .social__block_icons{
     padding-top: 25px;
 }
-.social__block_icons img:not(:last-child) {
+.social__block_icons a:not(:last-child) {
     padding: 0px 10px 0px 0px;
 }
 .info__block {
@@ -787,11 +805,14 @@ color: #FFFFFF;
     text-transform: uppercase;
     color: #E4E8EB;
 }
-.info__block_subtitle {
+.info__block_subtitle a{
     padding-top: 10px;
     font-size: 15px;
     line-height: 146%;
     color: #939596;
+}
+.info__block_subtitle a:hover{
+    text-decoration: underline;
 }
 .info__block_prod {
     min-width: 150px;
